@@ -11,3 +11,10 @@ it('has a starting port', () => {
 
   expect(ship.startingPort).toBe('Dover');
 });
+it('can set sail', () => {
+  const ship = new Ship('Calais');
+
+  ship.setSail();
+
+  expect(ship.startingPort).toBeFalsy();
+});
