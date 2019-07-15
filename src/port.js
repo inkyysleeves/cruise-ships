@@ -7,7 +7,7 @@ Port.prototype = {
     this.ships.push(ship);
   },
   removeShip: function removeShip(ship) {
-    // eslint-disable-next-line no-plusplus 
+    // eslint-disable-next-line no-plusplus
     for (let i = 0; i < this.ships.length; i++) {
       if (this.ships[i] === ship) {
         this.ships.splice(i, 1);
