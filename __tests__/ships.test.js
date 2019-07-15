@@ -35,6 +35,7 @@ it('can dock at a different port', () => {
   ship.setSail();
   ship.docking(calais);
   expect(ship.currentPort).toEqual(calais);
+  expect(calais.ships).toContain(ship);
 });
 it('gets added to the port on instantiation', () => {
   const dover = new Port('Dover');
@@ -49,7 +50,7 @@ it('can\'t sail further than its itinerary', () => {
   const itinerary = new Itinerary([dover, calais]);
   const ship = new Ship(itinerary);
   ship.setSail();
-  ship.dock();
+  ship.docking();
 
   expect(() => ship.setSail()).toThrowError('End of itinerary reached');
 });
