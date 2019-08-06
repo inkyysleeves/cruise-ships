@@ -4,11 +4,8 @@ const Itinerary = require('../src/itinerary.js');
 
 describe('Ship', () => {
   let ship;
-
   let dover;
-
   let calais;
-
   let itinerary;
 
   beforeEach(() => {
