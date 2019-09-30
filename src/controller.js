@@ -61,7 +61,7 @@
       shipElement.style.left = `${shipLeft + 1}px`;
     }, 20);
     if (!nextPortElement) {
-      return alert('End of the line!');
+      return alert('End of the line people!');
     }
   };
 
